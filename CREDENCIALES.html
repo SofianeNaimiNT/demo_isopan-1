@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiFlow Pro - Credenciales de Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #6b7280;
+            font-size: 18px;
+        }
+        
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .credential-card {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .credential-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+        
+        .credential-card.admin {
+            background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+        }
+        
+        .credential-card.logistics {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        }
+        
+        .credential-card.operator {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+        }
+        
+        .credential-card.transporter {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+        
+        .credential-card.client {
+            background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+        }
+        
+        .role-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .role-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+        
+        .role-description {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        
+        .credentials {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .credential-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .credential-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .credential-label {
+            font-size: 12px;
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .credential-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1f2937;
+            font-family: 'Courier New', monospace;
+            background: #f3f4f6;
+            padding: 4px 8px;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+        }
+        
+        .footer p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .quick-start {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .tips {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .tips h3 {
+            color: #92400e;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .tips ul {
+            list-style-position: inside;
+            color: #92400e;
+        }
+        
+        .tips li {
+            margin-bottom: 5px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 LogiFlow Pro</h1>
+            <p>Credenciales de Acceso para Demo</p>
+        </div>
+        
+        <div class="credentials-grid">
+            <!-- Admin -->
+            <div class="credential-card admin">
+                <div class="role-icon">👔</div>
+                <div class="role-name">Supply Chain Manager</div>
+                <div class="role-description">Acceso completo a todos los módulos</div>
+                <div class="credentials">
+                    <div class="credential-row">
+                        <span class="credential-label">Usuario:</span>
+                        <span class="credential-value">admin</span>
+                    </div>
+                    <div class="credential-row">
+                        <span class="credential-label">Contraseña:</span>
+                        <span class="credential-value">admin123</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Logistics -->
+            <div class="credential-card logistics">
+                <div class="role-icon">📋</div>
+                <div class="role-name">Responsable de Logística</div>
+                <div class="role-description">Gestión operativa completa</div>
+                <div class="credentials">
+                    <div class="credential-row">
+                        <span class="credential-label">Usuario:</span>
+                        <span class="credential-value">logistica</span>
+                    </div>
+                    <div class="credential-row">
+                        <span class="credential-label">Contraseña:</span>
+                        <span class="credential-value">log123</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Operator -->
+            <div class="credential-card operator">
+                <div class="role-icon">🔧</div>
+                <div class="role-name">Operario / Carretillero</div>
+                <div class="role-description">Vista móvil optimizada</div>
+                <div class="credentials">
+                    <div class="credential-row">
+                        <span class="credential-label">Usuario:</span>
+                        <span class="credential-value">operario</span>
+                    </div>
+                    <div class="credential-row">
+                        <span class="credential-label">Contraseña:</span>
+                        <span class="credential-value">oper123</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Transporter -->
+            <div class="credential-card transporter">
+                <div class="role-icon">🚛</div>
+                <div class="role-name">Transportista Externo</div>
+                <div class="role-description">Vista limitada a sus operaciones</div>
+                <div class="credentials">
+                    <div class="credential-row">
+                        <span class="credential-label">Usuario:</span>
+                        <span class="credential-value">transportista</span>
+                    </div>
+                    <div class="credential-row">
+                        <span class="credential-label">Contraseña:</span>
+                        <span class="credential-value">trans123</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client -->
+            <div class="credential-card client">
+                <div class="role-icon">🏢</div>
+                <div class="role-name">Cliente Final</div>
+                <div class="role-description">Vista de documentos y pedidos</div>
+                <div class="credentials">
+                    <div class="credential-row">
+                        <span class="credential-label">Usuario:</span>
+                        <span class="credential-value">cliente</span>
+                    </div>
+                    <div class="credential-row">
+                        <span class="credential-label">Contraseña:</span>
+                        <span class="credential-value">cli123</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h3>💡 Tips para la Demo</h3>
+            <ul>
+                <li><strong>Recomendado:</strong> Empezar con usuario <code>admin</code> para ver todo</li>
+                <li><strong>Dashboard:</strong> Se actualiza automáticamente cada 10 segundos</li>
+                <li><strong>Búsqueda:</strong> Presiona Cmd+K (Ctrl+K en Windows) en cualquier momento</li>
+                <li><strong>Notificaciones:</strong> Click en el icono de campana para ver el centro de notificaciones</li>
+                <li><strong>Vista Móvil:</strong> Login como <code>operario</code> para ver interfaz optimizada</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>¿Listo para empezar?</strong></p>
+            <a href="index.html" class="quick-start">🚀 Abrir LogiFlow Pro</a>
+            <p style="margin-top: 20px; font-size: 12px;">
+                <em>Mantén esta página abierta durante la demo para referencia rápida</em>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Copiar credenciales al hacer clic en la tarjeta
+        document.querySelectorAll('.credential-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const username = this.querySelector('.credential-value').textContent;
+                const password = this.querySelectorAll('.credential-value')[1].textContent;
+                
+                // Crear texto para copiar
+                const text = `Usuario: ${username}\nContraseña: ${password}`;
+                
+                // Copiar al portapapeles
+                navigator.clipboard.writeText(text).then(() => {
+                    // Feedback visual
+                    const originalBorder = this.style.borderColor;
+                    this.style.borderColor = '#10b981';
+                    setTimeout(() => {
+                        this.style.borderColor = originalBorder;
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
