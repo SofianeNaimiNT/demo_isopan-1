@@ -45,7 +45,8 @@ const DashboardModule = {
         const user = AuthModule.getCurrentUser();
         
         return `
-            <div class="space-y-6 animate-fade-in">
+            <div class="space-y-6 animate-fade-in max-h-screen overflow-y-auto">
+
                 <!-- Header -->
                 <div class="flex items-center justify-between">
                     <div>
