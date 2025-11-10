@@ -107,7 +107,7 @@ const DashboardModule = {
                             <i class="fas fa-chart-pie mr-2 text-blue-600"></i>
                             Estado de Órdenes
                         </h3>
-                        <canvas id="ordersStatusChart" class="w-full" style="height: 300px;"></canvas>
+                        <canvas id="ordersStatusChart" class="w-full h-72"></canvas>
                     </div>
                     
                     <!-- Loading Times Chart -->
@@ -116,7 +116,7 @@ const DashboardModule = {
                             <i class="fas fa-chart-line mr-2 text-green-600"></i>
                             Tiempos de Carga (Últimos 7 días)
                         </h3>
-                        <canvas id="loadingTimesChart" class="w-full" style="height: 300px;"></canvas>
+                        <canvas id="loadingTimesChart" class="w-full h-72"></canvas>
                     </div>
                 </div>
                 
