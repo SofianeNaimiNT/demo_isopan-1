@@ -227,7 +227,7 @@ const AuthModule = {
                     
                     <!-- Footer -->
                     <div class="mt-6 text-center text-xs text-gray-500">
-                        <p>© 2024 LogiFlow Pro. Todos los derechos reservados.</p>
+                        <p>© 2025 Naimitech S.L. Todos los derechos reservados.</p>
                         <p class="mt-1">Versión 1.0.0 - Demo Profesional</p>
                     </div>
                 </div>
