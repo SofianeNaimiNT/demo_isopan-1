@@ -383,6 +383,6 @@ Vista: Documentos
 
 **Desarrollado con ❤️ para revolucionar la logística empresarial**
 
-*LogiFlow Pro - Sistema de Gestión Logística Integral*
+*Isopan Iberica - Sistema a medida de Logística Integral*
 
-*v1.0.0 - 2024*
+*v1.0.0 - 2025*
