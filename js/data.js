@@ -8,7 +8,7 @@ const USERS = [
         id: 'U001',
         username: 'admin',
         password: 'admin123',
-        name: 'María García López',
+        name: 'Marta Vinuesa',
         role: 'supply_chain_manager',
         email: 'maria.garcia@logiflow.com',
         phone: '+34 612 345 678',
