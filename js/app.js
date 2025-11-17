@@ -381,10 +381,10 @@ const App = {
     logout: function() {
         if (confirm('¿Está seguro de que desea cerrar sesión?')) {
             AuthModule.logout();
+            document.getElementById('app').innerHTML = "";
             NotificationsModule.stopRealTimeUpdates();
             DashboardModule.stopRealTimeUpdates();
-        }
-        document.getElementById('app').innerHTML = "";
+        }  
     }
 };
 
