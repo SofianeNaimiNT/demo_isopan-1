@@ -377,17 +377,32 @@ const App = {
         this.modalOpen = false;
     },
     
-    // Logout
-    logout: function() {
-        if (confirm('¿Está seguro de que desea cerrar sesión?')) {
-            AuthModule.logout();
-            NotificationsModule.stopRealTimeUpdates();
-            DashboardModule.stopRealTimeUpdates();
-            setTimeout(() => {
-                App.init();
-            }, 0);
-        }  
+    // APP
+logout: function() {
+    if (!confirm('¿Está seguro de que desea cerrar sesión?')) return;
+
+    // 1) Clear session
+    AuthModule.logout();
+
+    // 2) Stop any background work
+    if (typeof NotificationsModule !== 'undefined' && NotificationsModule.stopRealTimeUpdates) {
+        NotificationsModule.stopRealTimeUpdates();
     }
+    if (typeof DashboardModule !== 'undefined' && DashboardModule.stopRealTimeUpdates) {
+        DashboardModule.stopRealTimeUpdates();
+    }
+
+    // 3) Limpia el contenedor visual y fuerza el re-render en el siguiente tick
+    const appEl = document.getElementById('app');
+    if (appEl) appEl.innerHTML = '';
+
+    // Espera al siguiente tick para evitar race condition con el DOM
+    setTimeout(() => {
+        console.log('App.logout -> re-initializing app after logout');
+        App.init();
+    }, 0);
+}
+
 };
 
 // Inicializar aplicación cuando el DOM esté listo

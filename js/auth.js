@@ -233,6 +233,7 @@ const AuthModule = {
                 </div>
             </div>
         `;
+        
     },
     
     // Manejar submit del formulario de login
