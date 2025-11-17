@@ -84,6 +84,9 @@ const App = {
                 </div>
             </div>
         `;
+
+        this.setupEventListeners();
+        this.handleRouting();
     },
     
     // Renderizar sidebar
