@@ -383,7 +383,6 @@ const App = {
             AuthModule.logout();
             NotificationsModule.stopRealTimeUpdates();
             DashboardModule.stopRealTimeUpdates();
-            App.init();
         }
     }
 };
