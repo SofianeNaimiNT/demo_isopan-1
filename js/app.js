@@ -384,6 +384,7 @@ const App = {
             NotificationsModule.stopRealTimeUpdates();
             DashboardModule.stopRealTimeUpdates();
         }
+        document.getElementById('app').innerHTML = "";
     }
 };
 
