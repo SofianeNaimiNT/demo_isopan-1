@@ -102,7 +102,7 @@ const App = {
                         <i class="fas fa-boxes-stacked text-white text-xl"></i>
                     </div>
                     <div>
-                        <h1 class="text-lg font-bold text-gray-900">LogiFlow Pro</h1>
+                        <h1 class="text-lg font-bold text-gray-900">Isopan Iberica</h1>
                         <p class="text-xs text-gray-600">v1.0.0</p>
                     </div>
                 </div>
