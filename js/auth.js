@@ -264,6 +264,7 @@ const AuthModule = {
             form.classList.add('animate-shake');
             setTimeout(() => form.classList.remove('animate-shake'), 500);
         }
+        App.init();   // ⭐ FIX DEFINITIVO
     }
 };
 
